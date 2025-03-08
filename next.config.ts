@@ -10,7 +10,16 @@ setupDevPlatform().catch(console.error);
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'pub-4515151b6c424acfad425474e1717a02.r2.dev',
+        port: '',
+        pathname: '/**',
+      },
+    ],
+  },
 };
 
 export default nextConfig;

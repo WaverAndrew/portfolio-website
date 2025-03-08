@@ -1,101 +1,190 @@
+import Link from "next/link";
 import Image from "next/image";
+import { TypewriterEffect } from "@/components/ui/typewriter-effect";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
+    <div className="space-y-20">
+      {/* Hero Section */}
+      <section className="space-y-6">
+        <TypewriterEffect
+          words={[
+            { text: "Hey," },
+            { text: "I'm" },
+            { text: "Andrea", className: "gradient-text" },
+            { text: ":)" },
+          ]}
+          className="text-4xl font-bold sm:text-5xl text-left"
+          cursorClassName="bg-gray-900 ml-0"
         />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+        <p className="text-lg text-gray-600 dark:text-gray-400 leading-relaxed max-w-2xl">
+          I'm a software engineer passionate about building products that make a
+          difference. Currently, I'm focused on [your current focus/role].
+          Previously, I worked at [previous experience].
+        </p>
+      </section>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+      {/* Photo Collage Grid */}
+      <section className="relative overflow-hidden max-w-2xl">
+        <div className="absolute bottom-0 left-0 right-0 h-48 bg-gradient-to-t from-white/95 via-white/50 to-transparent lg:hidden z-10"></div>
+        <div className="grid grid-cols-2 gap-2 auto-rows-[100px] sm:auto-rows-[120px]">
+          <div className="row-span-2 relative rounded-xl overflow-hidden shadow-sm">
             <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
+              src="https://pub-4515151b6c424acfad425474e1717a02.r2.dev/IMG1%20copy%202.png"
+              alt="Photo w/ Dan"
+              fill
+              className="object-cover object-[center_20%]"
             />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+          </div>
+          <div className="relative rounded-xl overflow-hidden shadow-sm">
+            <Image
+              src="https://pub-4515151b6c424acfad425474e1717a02.r2.dev/image.webp"
+              alt="Photo 3"
+              fill
+              className="object-cover"
+            />
+          </div>
+          <div className="row-span-2 relative rounded-xl overflow-hidden shadow-sm">
+            <Image
+              src="https://pub-4515151b6c424acfad425474e1717a02.r2.dev/IMG_8669-2.webp"
+              alt="Marocco"
+              fill
+              className="object-cover"
+            />
+          </div>
+          <div className="relative rounded-xl overflow-hidden shadow-sm">
+            <Image
+              src="https://pub-4515151b6c424acfad425474e1717a02.r2.dev/IMG_5826-2.webp"
+              alt="Apple Park"
+              fill
+              className="object-cover object-[center_20%]"
+            />
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </section>
+
+      {/* Work Experience */}
+      <section className="space-y-6">
+        <h2 className="text-2xl font-bold">Work</h2>
+        <div className="space-y-4">
+          {[
+            {
+              company: "Company One",
+              logo: "/company1-logo.png",
+              role: "Software Engineer",
+              type: "Engineering, AI",
+              period: "2024",
+              location: "San Francisco, CA",
+            },
+            {
+              company: "Company Two",
+              logo: "/company2-logo.png",
+              role: "Product Engineer",
+              type: "Product",
+              period: "2023",
+              location: "New York, NY",
+            },
+          ].map((job, i) => (
+            <div key={i} className="group flex items-center gap-4 py-2">
+              <div className="w-8 h-8 relative flex-shrink-0">
+                <Image
+                  src={job.logo}
+                  alt={`${job.company} logo`}
+                  fill
+                  className="object-contain"
+                />
+              </div>
+              <div className="flex-1 flex items-center justify-between">
+                <div>
+                  <h3 className="font-medium group-hover:text-gray-600 dark:group-hover:text-gray-300 transition-colors">
+                    {job.company}
+                  </h3>
+                  <p className="text-sm text-gray-600 dark:text-gray-400">
+                    {job.type}
+                  </p>
+                </div>
+                <div className="text-right">
+                  <p className="text-sm text-gray-600 dark:text-gray-400">
+                    {job.period}
+                  </p>
+                  <p className="text-xs text-gray-500 dark:text-gray-500">
+                    {job.location}
+                  </p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Projects */}
+      <section className="space-y-6">
+        <h2 className="text-2xl font-bold">Projects</h2>
+        <div className="grid gap-6 sm:grid-cols-2">
+          {[
+            {
+              title: "Project One",
+              description:
+                "A brief description of your first project and its impact.",
+              image: "/project1.jpg",
+              link: "#",
+            },
+            {
+              title: "Project Two",
+              description:
+                "A brief description of your second project and its impact.",
+              image: "/project2.jpg",
+              link: "#",
+            },
+          ].map((project, i) => (
+            <Link
+              key={i}
+              href={project.link}
+              className="group block overflow-hidden rounded-lg border border-gray-200 dark:border-gray-800 hover:border-gray-300 dark:hover:border-gray-700 transition-colors"
+            >
+              <div className="relative h-48 w-full">
+                <Image
+                  src={project.image}
+                  alt={project.title}
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="p-4">
+                <h3 className="font-bold mb-2 group-hover:text-gray-600 dark:group-hover:text-gray-300 transition-colors">
+                  {project.title}
+                </h3>
+                <p className="text-gray-600 dark:text-gray-400">
+                  {project.description}
+                </p>
+              </div>
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      {/* Contact */}
+      <section className="space-y-6">
+        <h2 className="text-2xl font-bold">Get in Touch</h2>
+        <div className="flex gap-6">
+          {[
+            { name: "GitHub", url: "https://github.com/yourusername" },
+            { name: "LinkedIn", url: "https://linkedin.com/in/yourusername" },
+            { name: "Twitter", url: "https://twitter.com/yourusername" },
+            { name: "Email", url: "mailto:your.email@example.com" },
+          ].map((social, i) => (
+            <Link
+              key={i}
+              href={social.url}
+              className="link-underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {social.name}
+            </Link>
+          ))}
+        </div>
+      </section>
     </div>
   );
 }
