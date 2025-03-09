@@ -8,8 +8,21 @@
 }
 
 body {
-  background: hsl(var(--background));
   color: hsl(var(--foreground));
+}
+
+.dark body {
+  background: rgb(10, 10, 12);
+  background-image: none !important;
+}
+
+body:not(.dark) {
+  
+  background-image: 
+    linear-gradient(to right, rgba(248, 249, 250, 0.8), rgba(251, 252, 253, 0.8)),
+    url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='paper' x='0' y='0' width='100%25' height='100%25'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.4' numOctaves='1' result='noise' /%3E%3CfeDiffuseLighting in='noise' lighting-color='%23f5f5f5' surfaceScale='0.5'%3E%3CfeDistantLight azimuth='45' elevation='35' /%3E%3C/feDiffuseLighting%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23paper)' opacity='0.15' /%3E%3C/svg%3E");
+  background-position: center;
+  background-size: 200px 200px;
 }
 
 .gradient-text {
@@ -19,8 +32,6 @@ body {
 .link-underline {
   @apply relative after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-0 after:bg-current after:transition-all after:duration-300 hover:after:w-full;
 }
-
-
 
 @layer base {
   :root {
@@ -77,8 +88,6 @@ body {
     --chart-5: 340 75% 55%;
   }
 }
-
-
 
 @layer base {
   * {
