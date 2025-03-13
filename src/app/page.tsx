@@ -5,6 +5,7 @@ import Image from "next/image";
 import { TypewriterEffect } from "@/components/ui/typewriter-effect";
 import { useState } from "react";
 import { ProjectModal } from "@/components/ProjectModal";
+import { marked } from "marked";
 
 export default function Home() {
   const [selectedProject, setSelectedProject] = useState<any>(null);
@@ -129,7 +130,7 @@ export default function Home() {
               </svg>
             </a>
             <a
-              href="https://linkedin.com/in/yourusername"
+              href="https://www.linkedin.com/in/andrea-bonarrigo"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-colors"
@@ -257,33 +258,64 @@ export default function Home() {
               location: "Luxembourg, Luxembourg",
             },
             {
+              company: "UBooks",
+              logo: "https://media.licdn.com/dms/image/v2/D4D0BAQE5QJ9kzLEvmQ/company-logo_400_400/company-logo_400_400/0/1737487185134?e=1749686400&v=beta&t=RS68EJvbg3y3IIsvgBUrZV6aAZ85aoVGBd1eYw_grVs",
+              role: "Founder",
+              type: "Founder",
+              period: "Oct 2024 - Present",
+              location: "Milan, Italy",
+              description:
+                "Founded the first peer-to-peer marketplace for university textbooks in Italy. Currently at **2.8k+ users**, **30k visits** and **1.5k books traded** in the first two weeks.",
+            },
+            {
+              company: "Lead The Future Mentorship",
+              logo: "https://media.licdn.com/dms/image/v2/C4D0BAQH-xHKaD_VO5g/company-logo_400_400/company-logo_400_400/0/1673133565781?e=1749686400&v=beta&t=mO3ReB42rDcrtet7y9JU9T5aW1wUC67gT_KXwB38NTQ",
+              role: "Mentee",
+              type: "Mentee",
+              period: "Sept 2024 - Present",
+              location: "Milan, Italy",
+              description:
+                "Among the few Italian students selected to be mentees for LeadTheFuture, a leading mentorship non-profit organization for students in STEM, with acceptance rate **below 15%**. LeadTheFuture empowers top-performing students to achieve their goals and contribute to their communities by giving them one-on-one guidance from high-impact mentors coming from the world's leading STEM innovation hubs such as Silicon Valley and CERN.",
+            },
+            {
               company: "Leger Labs",
               logo: "https://media.licdn.com/dms/image/v2/D560BAQHZpywtsLraYw/company-logo_200_200/company-logo_200_200/0/1719257305365?e=1749686400&v=beta&t=SEQq3JX8r6vrJ3TjULcdZPMJ1YF-S5_42ZVYl9_q0P4",
               type: "Software Engineer - Applied AI",
               period: "March 2025 - Present",
               location: "Remote",
               description:
-                "Leger Labs is a NYC based VC-backed startup creating agentic AI solutions for the insurance industry. I'm developing an AI-powered sales calls analysis tool to optimize the sales process and collect data from the prospect automatically. ",
+                "Leger Labs is a NYC based **VC-backed startup** creating agentic AI solutions for the insurance industry. I'm developing an **AI-powered sales calls analysis tool** to optimize the sales process and collect data from the prospect automatically.",
             },
             {
-              company: "Ubooks.it",
-              logo: "/images/ubooks.png",
-              role: "Founder & Product Lead",
-              type: "Founder & Product Lead",
-              period: "2025 - Present",
-              location: "Milan, Italy",
-              description:
-                "Developed and shipped multiple features for the company's flagship product. Collaborated with design team to improve user experience.",
+              company: "University of Pennsylvania",
+              logo: "https://media.licdn.com/dms/image/v2/C4E0BAQHnbnsnJlBiZg/company-logo_400_400/company-logo_400_400/0/1630601168515/university_of_pennsylvania_logo?e=1749686400&v=beta&t=LrjjKAxPCm-dxtz-PQ2LrVncSZ8tNsg1n7c6sSob_4M",
+              role: "Blockchain Hackathon | Multiple Award Winner",
+              type: "Blockchain Hackathon | Multiple Award Winner",
+              period: "Feb 2024 - Feb 2025",
+              location: "Philadelphia, PA, US",
+              description: `
+### 2025 Hackathon
+- Invited and sponsored for the **second consecutive year**
+- Coded **22 hours straight** with minimal breaks
+- Developed **4 working projects** with my team
+- **Won our track** and placed **2nd in another category**
+- Created a **natural language interface** for complex blockchain operations
+
+### 2024 Hackathon
+- Invited and sponsored to travel to UPenn as a **freshman**
+- Developed an **NFT-based platform** for simplifying scholarship eligibility certification
+- **Won the award** for our track
+              `,
             },
             {
               company: "Idemos",
-              logo: "https://media.licdn.com/dms/image/v2/D4E0BAQHl1hu-bNuqpg/company-logo_100_100/company-logo_100_100/0/1692711668598?e=1749686400&v=beta&t=It8iYzEkgdMMznhDnt3thBQT8AqOg4fmMTNMIkbsHzs",
+              logo: "https://media.licdn.com/dms/image/v2/D4E0BAQHl1hu-bNuqpg/company-logo_400_400/company-logo_400_400/0/1692711668598?e=1749686400&v=beta&t=mm5ZnDZPPltUGcvk7Q3i9qVlnsuM6-8tyvVKFoNkDOU",
               role: "Co-Founder & Product Lead",
               type: "Co-Founder & Product Lead",
               period: "Sept 2021 - June 2022",
               location: "Remote",
               description:
-                "Led the development and launch of Idemos, where we built a scalable personalization platform for web 3.0 companies. Successfully collaborated with 20+ international clients and achieved revenue in excess of five figures per month at 17 y/o",
+                "Led the development and launch of Idemos, where we built a scalable personalization platform for web 3.0 companies. Successfully collaborated with **20+ international clients** and achieved revenue in excess of **five figures per month** at **17 y/o**",
             },
           ].map((job, i) => (
             <details
@@ -319,7 +351,11 @@ export default function Home() {
                 </div>
               </summary>
               <div className="px-3 pb-3 text-sm text-gray-600 dark:text-gray-400">
-                {job.description}
+                <div
+                  dangerouslySetInnerHTML={{
+                    __html: marked.parse(job.description || ""),
+                  }}
+                />
               </div>
             </details>
           ))}
@@ -334,7 +370,7 @@ export default function Home() {
               school: "Bocconi University",
               logo: "/images/bocconi.png",
               degree: "Bachelor's in Economics and Management",
-              period: "2021 - Present",
+              period: "2023 - Present",
               location: "Milan, Italy",
               description:
                 "3rd in Europe, 7th in the world (QS Ranking). Current GPA: 30.1/30 (as of 08/24)",
@@ -347,7 +383,7 @@ export default function Home() {
             {
               school: "I.I.S Don Milani Montichiari",
               degree: "Scientific Path",
-              period: "2016 - 2021",
+              period: "2018 - 2023",
               location: "Montichiari, Italy",
               description: "Valedictorian with 100 cum laude / 100",
               achievements: [
