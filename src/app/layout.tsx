@@ -6,8 +6,9 @@ import Navbar from "../components/ui/Navbar";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Your Name - Software Engineer",
-  description: "Software engineer passionate about building impactful products",
+  title: "Andrea Bonarrigo - Software Engineer & Entrepreneur",
+  description:
+    "Hi! I am a 20 years old student living in Milan, Italy with a burning passion for startups and technology, currently pursuing a BSc in Economics & Management at Bocconi University. What drives me? I started coding at 11 and quickly became passionate about bringing my ideas to life. With each project, I realized my love for startups and that's what I aspire to pursue. Outside of work, I enjoy tennis, snowboarding, and reading.",
   icons: {
     icon: "/favicon.ico",
   },

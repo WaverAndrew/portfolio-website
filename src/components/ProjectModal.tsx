@@ -13,6 +13,10 @@ interface ProjectModalProps {
     image: string;
     tech: string[];
     link: string;
+    period: string;
+    results: string[];
+    problems: string[];
+    learnings: string[];
   };
 }
 
@@ -59,17 +63,21 @@ export function ProjectModal({
 
                 <Dialog.Title
                   as="h3"
-                  className="text-2xl font-bold leading-6 mb-4"
+                  className="text-2xl font-bold leading-6 mb-2"
                 >
                   {project.title}
                 </Dialog.Title>
 
-                <div className="mt-4">
-                  <p className="text-gray-600 dark:text-gray-300 mb-6">
+                <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">
+                  {project.period}
+                </p>
+
+                <div className="mt-4 space-y-6">
+                  <p className="text-gray-600 dark:text-gray-300">
                     {project.description}
                   </p>
 
-                  <div className="flex flex-wrap gap-2 mb-6">
+                  <div className="flex flex-wrap gap-2">
                     {project.tech.map((tech, index) => (
                       <span
                         key={index}
@@ -80,7 +88,72 @@ export function ProjectModal({
                     ))}
                   </div>
 
-                  <div className="flex justify-between items-center">
+                  <div className="space-y-4">
+                    <div>
+                      <h4 className="font-medium text-gray-900 dark:text-gray-100 mb-2">
+                        Results
+                      </h4>
+                      <ul className="list-disc list-inside space-y-1 text-gray-600 dark:text-gray-300">
+                        {project.results.map((result, index) => (
+                          <li key={index}>{result}</li>
+                        ))}
+                      </ul>
+                    </div>
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      <div className="bg-red-50/50 dark:bg-red-900/10 rounded-lg p-4 border border-red-100 dark:border-red-900/20">
+                        <h4 className="font-medium text-red-700 dark:text-red-300 mb-2 flex items-center gap-2">
+                          <svg
+                            viewBox="0 0 24 24"
+                            className="h-5 w-5 fill-current"
+                          >
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z" />
+                          </svg>
+                          Problems
+                        </h4>
+                        <ul className="space-y-2">
+                          {project.problems.map((problem, index) => (
+                            <li
+                              key={index}
+                              className="text-sm text-red-600 dark:text-red-400 flex items-start gap-2"
+                            >
+                              <span className="text-red-400 dark:text-red-500">
+                                •
+                              </span>
+                              {problem}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+
+                      <div className="bg-green-50/50 dark:bg-green-900/10 rounded-lg p-4 border border-green-100 dark:border-green-900/20">
+                        <h4 className="font-medium text-green-700 dark:text-green-300 mb-2 flex items-center gap-2">
+                          <svg
+                            viewBox="0 0 24 24"
+                            className="h-5 w-5 fill-current"
+                          >
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                          </svg>
+                          Learnings
+                        </h4>
+                        <ul className="space-y-2">
+                          {project.learnings.map((learning, index) => (
+                            <li
+                              key={index}
+                              className="text-sm text-green-600 dark:text-green-400 flex items-start gap-2"
+                            >
+                              <span className="text-green-400 dark:text-green-500">
+                                •
+                              </span>
+                              {learning}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="flex justify-between items-center pt-4">
                     <a
                       href={project.link}
                       target="_blank"

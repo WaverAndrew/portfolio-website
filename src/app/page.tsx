@@ -12,20 +12,93 @@ export default function Home() {
 
   const projects = [
     {
-      title: "Project One",
+      title: "Instascanner",
       description:
-        "A brief description of your first project and its impact. This can be a longer description that provides more detail about the project, its goals, and the problems it solves.",
+        "An automatic tool designed to easily find instagram pages and influencers meeting certain criteria for influencer marketing campaigns, without manual interaction.",
       image: "/project1.jpg",
       link: "#",
-      tech: ["Next.js", "TypeScript", "Tailwind CSS", "Prisma"],
+      tech: ["Python", "Web Scraping", "Instagram API"],
+      period: "2017-2018",
+      results: [
+        "Successfully found instagram profiles with custom criteria",
+        "Automatic calculation of engagement rate and viral potential",
+        "Tested with e-commerce campaigns",
+      ],
+      problems: [
+        "Extremely complex to operate at scale",
+        "Problems with instagram bot limitations",
+        "Extreme need of manual maintenance",
+      ],
+      learnings: [
+        "Don't rely on other websites to exist (PAIN to maintain operational!)",
+        "Work on something more scalable",
+      ],
     },
     {
-      title: "Project Two",
+      title: "Eaglecam",
       description:
-        "A brief description of your second project and its impact. This can be a longer description that provides more detail about the project, its goals, and the problems it solves.",
+        "A tool that extracted the photos that look the best from short videos using a custom AI Neural Network trained to recognise good looking photos.",
       image: "/project2.jpg",
       link: "#",
-      tech: ["React", "Node.js", "MongoDB", "AWS"],
+      tech: ["Python", "TensorFlow", "AI/ML"],
+      period: "2019",
+      results: [
+        "Managed to create a working demo",
+        "Creating a custom working Neural net at 15 y/o for recognising good photos",
+      ],
+      problems: [
+        "Creating a custom Neural Net with limited knowledge and basically pure guessing over the NN structure",
+        "Complexities of server deployment of AI Models",
+        "Basically impossible to get done by myself",
+      ],
+      learnings: [
+        "Work on problems people HAVE",
+        "Don't try to build a complex solution in the very beginning",
+        "How AI & ML models works (it was a good 200+ hours of learning before i managed to do it)",
+      ],
+    },
+    {
+      title: "Idemos",
+      description:
+        "A platform that allowed web 3.0 projects working with NFTs to offer their customers an easy way to customise their own unique masterpieces, creating a private and personalised experience.",
+      image: "/project3.jpg",
+      link: "#",
+      tech: ["Web3", "NFT", "Blockchain"],
+      period: "2021-2022",
+      results: [
+        "Served successfully 20+ international clients",
+        "Organized and managed a team",
+        "Achieved up to 30.000$/month in revenue",
+        "Won startup contest from Banca Intesa (Biggest italian bank)",
+      ],
+      problems: [
+        "Built in a hype-driven, cyclical sector",
+        "Impossible to sustain after market crash of mid 2022",
+      ],
+      learnings: [
+        "How to pivot effectively (this wasn't the first concept)",
+        "Focus on distribution from the start",
+        "Validate the idea in the beginning",
+        "In a gold rush, sell shovels",
+      ],
+    },
+    {
+      title: "Eurys",
+      description:
+        "An AI-powered search engine for people. You ask a question in a natural way (such as 'Who can help me with marketing?') and get all the relevant profiles in a second.",
+      image: "/project4.jpg",
+      link: "#",
+      tech: ["Next.js", "AI", "Full Stack"],
+      period: "2024",
+      results: ["Launching beta in several themed-communities"],
+      problems: [
+        "Had to learn Next-JS from scratch",
+        "Had to develop several custom ways to gather user data",
+      ],
+      learnings: [
+        "Transitioned from only backend to full-stack dev",
+        "How to work with 40°C outside",
+      ],
     },
   ];
 
@@ -88,12 +161,41 @@ export default function Home() {
             </a>
           </div>
         </div>
-        <p className="text-lg text-gray-600 dark:text-gray-400 leading-relaxed max-w-2xl">
-          I am a 20 y/o student living in Milan, Italy. I have a burning passion
-          for startups and technology, started coding at 11 and quickly became
-          passionate about bringing my ideas to life, and from that moment I
-          never stopped building.
-        </p>
+        <div className="space-y-4 max-w-2xl">
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed border-l-4 border-purple-500 pl-4 py-1">
+            I'm a <span className="font-medium">20-year-old student</span> based
+            in Milan, Italy,{" "}
+            <span className="font-bold">
+              deeply in love with startups, tech
+            </span>
+            , and the excitement of turning ideas into reality.
+          </p>
+
+          <p className="text-base text-gray-600 dark:text-gray-400 leading-relaxed">
+            <span className="font-bold">
+              I first discovered coding when I was 11
+            </span>
+            , and since then, I've been hooked: not just by programming itself,
+            but by the{" "}
+            <span className="italic font-bold">
+              thrill of creating something from scratch
+            </span>{" "}
+            and watching it come to life.
+          </p>
+
+          <p className="text-base text-gray-600 dark:text-gray-400 leading-relaxed">
+            Through each project, I've grown more passionate about
+            <span className="font-bold"> entrepreneurship and innovation</span>,
+            and that's exactly the path I'm determined to follow.
+          </p>
+
+          <p className="text-base text-gray-600 dark:text-gray-400 leading-relaxed">
+            Outside of tech, you'll find me playing{" "}
+            <span className="font-medium">tennis</span>, chasing fresh powder on
+            my <span className="font-medium">snowboard</span>, or diving into a
+            good <span className="font-medium">book</span>.
+          </p>
+        </div>
       </section>
       {/* Photo Collage Grid */}
       <section className="relative overflow-hidden max-w-2xl">
@@ -223,6 +325,99 @@ export default function Home() {
           ))}
         </div>
       </section>
+      {/* Education */}
+      <section className="space-y-6">
+        <h2 className="text-2xl font-bold">Education</h2>
+        <div className="space-y-2">
+          {[
+            {
+              school: "Bocconi University",
+              logo: "/images/bocconi.png",
+              degree: "Bachelor's in Economics and Management",
+              period: "2021 - Present",
+              location: "Milan, Italy",
+              description:
+                "3rd in Europe, 7th in the world (QS Ranking). Current GPA: 30.1/30 (as of 08/24)",
+              activities: [
+                "Bocconi Entrepreneurship Club",
+                "Blockchain Association",
+                "Bocconi Students for Machine Learning",
+              ],
+            },
+            {
+              school: "I.I.S Don Milani Montichiari",
+              degree: "Scientific Path",
+              period: "2016 - 2021",
+              location: "Montichiari, Italy",
+              description: "Valedictorian with 100 cum laude / 100",
+              achievements: [
+                "Italian Olympiad (three times national semi-finals)",
+                "Physics Olympiad (national semi-finals)",
+                "Math Olympiad (8th in Italy in 2020)",
+              ],
+            },
+          ].map((edu, i) => (
+            <details
+              key={i}
+              className="group bg-gray-50/50 dark:bg-gray-900/50 rounded-lg transition-colors hover:bg-gray-100/50 dark:hover:bg-gray-800/50"
+            >
+              <summary className="flex items-center gap-4 p-3 cursor-pointer list-none">
+                <div className="w-7 h-7 relative flex-shrink-0">
+                  {edu.logo && (
+                    <Image
+                      src={edu.logo}
+                      alt={`${edu.school} logo`}
+                      fill
+                      className="object-contain"
+                    />
+                  )}
+                </div>
+                <div className="flex-1 flex items-center justify-between">
+                  <div>
+                    <h3 className="font-medium group-hover:text-gray-600 dark:group-hover:text-gray-300 transition-colors">
+                      {edu.school}
+                    </h3>
+                    <p className="text-sm text-gray-600 dark:text-gray-400">
+                      {edu.degree}
+                    </p>
+                  </div>
+                  <div className="text-right">
+                    <p className="text-sm text-gray-600 dark:text-gray-400">
+                      {edu.period}
+                    </p>
+                    <p className="text-xs text-gray-500 dark:text-gray-500">
+                      {edu.location}
+                    </p>
+                  </div>
+                </div>
+              </summary>
+              <div className="px-3 pb-3 text-sm text-gray-600 dark:text-gray-400">
+                <p className="mb-2">{edu.description}</p>
+                {edu.activities && (
+                  <div className="mt-2">
+                    <p className="font-medium mb-1">Activities:</p>
+                    <ul className="list-disc list-inside">
+                      {edu.activities.map((activity, index) => (
+                        <li key={index}>{activity}</li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+                {edu.achievements && (
+                  <div className="mt-2">
+                    <p className="font-medium mb-1">Achievements:</p>
+                    <ul className="list-disc list-inside">
+                      {edu.achievements.map((achievement, index) => (
+                        <li key={index}>{achievement}</li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+              </div>
+            </details>
+          ))}
+        </div>
+      </section>
       {/* Awards */}
       <section className="space-y-6">
         <h2 className="text-2xl font-bold">Awards & Recognition</h2>
@@ -230,31 +425,43 @@ export default function Home() {
           {[
             {
               icon: "🏆",
-              title: "First Place",
-              event: "University Hackathon 2024",
+              title: "Valedictorian",
+              event: "High School Graduation",
+              tagline: "Graduated with maximum cum laude (100/100)",
+            },
+            {
+              icon: "🎯",
+              title: "8th Place",
+              event: "National Math Olympiad 2020",
+              tagline: "Achieved top 10 position in national competition",
+            },
+            {
+              icon: "💼",
+              title: "Startup Success",
+              event: "Idemos",
               tagline:
-                "Built an AI-powered solution for sustainable energy management",
+                "Achieved over 30.000$/month in revenue from 20+ international clients at 17 y/o",
+            },
+            {
+              icon: "🏅",
+              title: "Bank Competition Winner",
+              event: "Banca Intesa Startup Contest",
+              tagline:
+                "Won startup contest from Italy's biggest bank at 18 y/o",
+            },
+            {
+              icon: "🌍",
+              title: "Hackathon Award",
+              event: "UPenn Hackathon",
+              tagline:
+                "Won Hackathon Award at UPenn, USA. Was invited and sponsored to travel and participate",
             },
             {
               icon: "🎓",
-              title: "Dean's List",
-              event: "Academic Excellence",
+              title: "Academic Excellence",
+              event: "Bocconi University",
               tagline:
-                "Maintained top academic performance for consecutive semesters",
-            },
-            {
-              icon: "🌟",
-              title: "Rising Star Award",
-              event: "Tech Conference 2023",
-              tagline:
-                "Recognized for innovative contributions in software development",
-            },
-            {
-              icon: "🔬",
-              title: "Research Grant",
-              event: "Innovation Fund",
-              tagline:
-                "Awarded funding for research in machine learning applications",
+                "Maintaining 30.1/30 GPA in one of Europe's top universities",
             },
           ].map((award, i) => (
             <div
