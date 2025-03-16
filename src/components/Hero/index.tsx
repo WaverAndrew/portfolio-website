@@ -17,7 +17,6 @@ export const Hero: React.FC = () => {
           className="text-3xl font-bold sm:text-3xl text-left"
           cursorClassName="bg-gray-900 ml-0"
         />
-        <SocialLinks />
       </div>
 
       <MicroBanners />
