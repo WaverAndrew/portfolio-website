@@ -26,7 +26,7 @@ export const Projects: React.FC = () => {
       title: "Instascanner",
       description:
         "An automatic tool designed to easily find instagram pages and influencers meeting certain criteria for influencer marketing campaigns, without manual interaction.",
-      image: "/project1.jpg",
+      image: "/images/instascanner_screen.png",
       link: "https://github.com/WaverAndrew/instascanner",
       demoLink: "https://www.youtube.com/embed/dQw4w9WgXcQ",
       liveLink: null,

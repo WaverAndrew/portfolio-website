@@ -24,7 +24,7 @@ export const Education: React.FC = () => {
       description: "Current GPA: 30/30 (as of 03/25)",
       activities: [
         "Bocconi Students for Machine Learning",
-        "Aephestus Applied Ai Bocconi",
+        "Hephaestus Applied Ai Bocconi",
         "theHacklab Bocconi",
         "Bocconi Entrepreneurship Club",
         "Blockchain Association",
