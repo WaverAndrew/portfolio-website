@@ -1,0 +1,32 @@
+.jobDescription h3 {
+  font-size: 0.95rem;
+  margin-top: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.jobDescription ul {
+  padding-left: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.jobDescription li {
+  font-size: 0.75rem;
+  margin-bottom: 0.25rem;
+  line-height: 1.2;
+}
+
+.jobDescription strong {
+  font-weight: 600;
+}
+
+/* Responsive styles for larger screens */
+@media (min-width: 640px) {
+  .jobDescription h3 {
+    font-size: 1.125rem;
+  }
+  
+  .jobDescription li {
+    font-size: 0.875rem;
+    line-height: 1.4;
+  }
+} 

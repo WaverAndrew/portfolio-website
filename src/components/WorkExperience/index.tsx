@@ -2,6 +2,12 @@ import React from "react";
 import Image from "next/image";
 import { marked } from "marked";
 
+// Configure marked options
+marked.setOptions({
+  gfm: true,
+  breaks: true,
+});
+
 // Define the job type
 interface Job {
   company: string;
@@ -50,16 +56,16 @@ export const WorkExperience: React.FC = () => {
       period: "Feb 2024 - Feb 2025",
       location: "Philadelphia, PA, US",
       description:
-        "<h3 class='font-bold text-lg mt-2 mb-2'>2025 Hackathon</h3>" +
-        "<ul class='list-disc pl-5 mb-4'>" +
+        "<h3 class='font-bold text-sm md:text-base mt-2 mb-1'>2025 Hackathon</h3>" +
+        "<ul class='list-disc pl-4 mb-3 text-xs md:text-sm'>" +
         "<li>Invited and sponsored for the <strong>second consecutive year</strong></li>" +
         "<li>Coded <strong>22 hours straight</strong> with minimal breaks</li>" +
         "<li>Developed <strong>4 working projects</strong> with my team</li>" +
         "<li><strong>Won our track</strong> and placed <strong>2nd in another category</strong></li>" +
         "<li>Created a <strong>natural language interface</strong> for complex blockchain operations</li>" +
         "</ul>" +
-        "<h3 class='font-bold text-lg mt-4 mb-2'>2024 Hackathon</h3>" +
-        "<ul class='list-disc pl-5'>" +
+        "<h3 class='font-bold text-sm md:text-base mt-3 mb-1'>2024 Hackathon</h3>" +
+        "<ul class='list-disc pl-4 text-xs md:text-sm'>" +
         "<li>Invited and sponsored to travel to UPenn as a <strong>freshman</strong></li>" +
         "<li>Developed an <strong>NFT-based platform</strong> for simplifying scholarship eligibility certification</li>" +
         "<li><strong>Won the award</strong> for our track</li>" +
@@ -88,16 +94,16 @@ export const WorkExperience: React.FC = () => {
   ];
 
   return (
-    <section className="space-y-6">
-      <h2 className="text-2xl font-bold">Work & Experiences</h2>
+    <section className="space-y-4">
+      <h2 className="text-xl md:text-2xl font-bold">Work & Experiences</h2>
       <div className="space-y-2">
         {jobs.map((job, i) => (
           <details
             key={i}
             className="group bg-gray-50/50 dark:bg-gray-900/50 rounded-lg transition-colors hover:bg-gray-100/50 dark:hover:bg-gray-800/50"
           >
-            <summary className="flex items-center gap-4 p-3 cursor-pointer list-none">
-              <div className="w-7 h-7 relative flex-shrink-0">
+            <summary className="flex items-center gap-3 p-2 md:p-3 cursor-pointer list-none">
+              <div className="w-6 h-6 md:w-7 md:h-7 relative flex-shrink-0">
                 <Image
                   src={job.logo}
                   alt={`${job.company} logo`}
@@ -105,17 +111,17 @@ export const WorkExperience: React.FC = () => {
                   className="object-contain"
                 />
               </div>
-              <div className="flex-1 flex items-center justify-between">
-                <div>
-                  <h3 className="font-medium group-hover:text-gray-600 dark:group-hover:text-gray-300 transition-colors">
+              <div className="flex-1 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1">
+                <div className="min-w-0 max-w-[70%] sm:max-w-none">
+                  <h3 className="text-sm md:text-base font-medium group-hover:text-gray-600 dark:group-hover:text-gray-300 transition-colors truncate">
                     {job.company}
                   </h3>
-                  <p className="text-sm text-gray-600 dark:text-gray-400">
+                  <p className="text-xs md:text-sm text-gray-600 dark:text-gray-400 line-clamp-1">
                     {job.type}
                   </p>
                 </div>
-                <div className="text-right">
-                  <p className="text-sm text-gray-600 dark:text-gray-400">
+                <div className="text-left sm:text-right whitespace-nowrap">
+                  <p className="text-xs md:text-sm text-gray-600 dark:text-gray-400">
                     {job.period}
                   </p>
                   <p className="text-xs text-gray-500 dark:text-gray-500">
@@ -124,8 +130,9 @@ export const WorkExperience: React.FC = () => {
                 </div>
               </div>
             </summary>
-            <div className="px-3 pb-3 text-sm text-gray-600 dark:text-gray-400">
+            <div className="px-2 md:px-3 pb-2 md:pb-3 text-xs md:text-sm text-gray-600 dark:text-gray-400">
               <div
+                className="prose-sm max-w-none prose-p:text-xs prose-p:md:text-sm prose-li:text-xs prose-li:md:text-sm prose-strong:font-medium"
                 dangerouslySetInnerHTML={{
                   __html: marked.parse(job.description || ""),
                 }}
