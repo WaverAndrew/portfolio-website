@@ -42,21 +42,21 @@ export const Awards: React.FC = () => {
   return (
     <section className="space-y-6">
       <h2 className="text-2xl font-bold">Awards & Recognition</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div className="grid grid-cols-2 gap-4 md:gap-6">
         {awards.map((award, i) => (
           <div
             key={i}
-            className="flex items-start gap-4 p-4 bg-gray-50/50 dark:bg-gray-900/50 rounded-lg transition-colors hover:bg-gray-100/50 dark:hover:bg-gray-800/50"
+            className="flex flex-col items-center text-center p-4 bg-gray-800/40 rounded-lg transition-all hover:bg-gray-700/50 border border-gray-700/50"
           >
-            <div className="text-4xl flex-shrink-0">{award.icon}</div>
+            <div className="text-4xl mb-2">{award.icon}</div>
             <div>
-              <h3 className="font-medium text-gray-900 dark:text-gray-100">
+              <h3 className="font-bold text-sm md:text-base text-white">
                 {award.title}
               </h3>
-              <p className="text-sm text-gray-600 dark:text-gray-400">
+              <p className="text-xs md:text-sm text-gray-400 font-medium">
                 {award.event}
               </p>
-              <p className="mt-1 text-sm text-gray-600 dark:text-gray-400">
+              <p className="mt-2 text-xs md:text-sm text-gray-400">
                 {award.tagline}
               </p>
             </div>
