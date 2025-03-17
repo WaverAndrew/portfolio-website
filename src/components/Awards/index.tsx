@@ -46,17 +46,17 @@ export const Awards: React.FC = () => {
         {awards.map((award, i) => (
           <div
             key={i}
-            className="flex flex-col items-center text-center p-4 bg-gray-800/40 rounded-lg transition-all hover:bg-gray-700/50 border border-gray-700/50"
+            className="flex flex-col items-center text-center p-4 bg-gray-100/80 dark:bg-gray-800/40 rounded-lg transition-all hover:bg-gray-200/80 dark:hover:bg-gray-700/50 border border-gray-200 dark:border-gray-700/50"
           >
             <div className="text-4xl mb-2">{award.icon}</div>
             <div>
-              <h3 className="font-bold text-sm md:text-base text-white">
+              <h3 className="font-bold text-sm md:text-base text-gray-900 dark:text-white">
                 {award.title}
               </h3>
-              <p className="text-xs md:text-sm text-gray-400 font-medium">
+              <p className="text-xs md:text-sm text-gray-600 dark:text-gray-400 font-medium">
                 {award.event}
               </p>
-              <p className="mt-2 text-xs md:text-sm text-gray-400">
+              <p className="mt-2 text-xs md:text-sm text-gray-600 dark:text-gray-400">
                 {award.tagline}
               </p>
             </div>
