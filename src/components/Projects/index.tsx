@@ -23,6 +23,33 @@ export const Projects: React.FC = () => {
 
   const projects: Project[] = [
     {
+      title: "UBooks",
+      description:
+        "Founded the first peer-to-peer marketplace for university textbooks in Italy. Currently at 2.8k+ users, 30k visits and 1.5k books traded in the first two weeks.",
+      image: "/images/ubooks_screen.jpeg",
+      link: "https://ubooks.it",
+      demoLink: "",
+      liveLink: "https://ubooks.it",
+      tech: ["Next.js", "TypeScript", "Tailwind CSS", "PostgreSQL"],
+      period: "2024 - Present",
+      results: [
+        "Reached 2.8k+ users in first two weeks",
+        "Achieved 30k visits",
+        "Successfully traded 1.5k books",
+        "First peer-to-peer marketplace for university textbooks in Italy",
+      ],
+      problems: [
+        "Building trust in a new marketplace",
+        "Managing inventory and logistics",
+        "Creating a seamless user experience",
+      ],
+      learnings: [
+        "Importance of user feedback in early stages",
+        "Value of building a community-driven platform",
+        "Need for efficient logistics in marketplace businesses",
+      ],
+    },
+    {
       title: "Instascanner",
       description:
         "An automatic tool designed to easily find instagram pages and influencers meeting certain criteria for influencer marketing campaigns, without manual interaction.",
@@ -47,36 +74,13 @@ export const Projects: React.FC = () => {
         "Work on something more scalable",
       ],
     },
-    {
-      title: "Eaglecam",
-      description:
-        "A tool that extracted the photos that look the best from short videos using a custom AI Neural Network trained to recognise good looking photos.",
-      image: "/project2.jpg",
-      link: "https://github.com/WaverAndrew/eaglecam",
-      demoLink: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-      liveLink: null,
-      tech: ["Python", "TensorFlow", "AI/ML"],
-      period: "2019",
-      results: [
-        "Managed to create a working demo",
-        "Creating a custom working Neural net at 15 y/o for recognising good photos",
-      ],
-      problems: [
-        "Creating a custom Neural Net with limited knowledge and basically pure guessing over the NN structure",
-        "Complexities of server deployment of AI Models",
-        "Basically impossible to get done by myself",
-      ],
-      learnings: [
-        "Work on problems people HAVE",
-        "Don't try to build a complex solution in the very beginning",
-        "How AI & ML models works (it was a good 200+ hours of learning before i managed to do it)",
-      ],
-    },
+
     {
       title: "Idemos",
       description:
         "A platform that allowed web 3.0 projects working with NFTs to offer their customers an easy way to customise their own unique masterpieces, creating a private and personalised experience.",
-      image: "/project3.jpg",
+      image:
+        "https://media.licdn.com/dms/image/v2/D4E0BAQHl1hu-bNuqpg/company-logo_400_400/company-logo_400_400/0/1692711668598?e=1749686400&v=beta&t=mm5ZnDZPPltUGcvk7Q3i9qVlnsuM6-8tyvVKFoNkDOU",
       link: "https://github.com/WaverAndrew/idemos",
       demoLink: "https://www.youtube.com/embed/dQw4w9WgXcQ",
       liveLink: "https://idemos.io",
@@ -116,6 +120,31 @@ export const Projects: React.FC = () => {
       learnings: [
         "Transitioned from only backend to full-stack dev",
         "How to work with 40°C outside",
+      ],
+    },
+    {
+      title: "Eaglecam",
+      description:
+        "A tool that extracted the photos that look the best from short videos using a custom AI Neural Network trained to recognise good looking photos.",
+      image: "/project2.jpg",
+      link: "https://github.com/WaverAndrew/eaglecam",
+      demoLink: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      liveLink: null,
+      tech: ["Python", "TensorFlow", "AI/ML"],
+      period: "2019",
+      results: [
+        "Managed to create a working demo",
+        "Creating a custom working Neural net at 15 y/o for recognising good photos",
+      ],
+      problems: [
+        "Creating a custom Neural Net with limited knowledge and basically pure guessing over the NN structure",
+        "Complexities of server deployment of AI Models",
+        "Basically impossible to get done by myself",
+      ],
+      learnings: [
+        "Work on problems people HAVE",
+        "Don't try to build a complex solution in the very beginning",
+        "How AI & ML models works (it was a good 200+ hours of learning before i managed to do it)",
       ],
     },
   ];

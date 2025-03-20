@@ -14,7 +14,7 @@ export const Hero: React.FC = () => {
             { text: "Andrea", className: "text-purple-800" },
             { text: ":)" },
           ]}
-          className="text-3xl font-bold sm:text-3xl text-left"
+          className="text-4xl sm:text-3xl font-bold text-left"
           cursorClassName="bg-gray-900 ml-0"
         />
       </div>
@@ -29,7 +29,7 @@ export const Hero: React.FC = () => {
           and the excitement of turning ideas into reality.
         </p>
 
-        <p className="text-base text-gray-600 dark:text-gray-400 leading-relaxed">
+        {/* <p className="text-base text-gray-600 dark:text-gray-400 leading-relaxed">
           <span className="font-bold">
             I first discovered coding when I was 11
           </span>
@@ -39,7 +39,7 @@ export const Hero: React.FC = () => {
             thrill of creating something from scratch
           </span>{" "}
           and watching it come to life.
-        </p>
+        </p> */}
 
         <p className="text-base text-gray-600 dark:text-gray-400 leading-relaxed">
           Outside of tech, you'll find me playing{" "}
