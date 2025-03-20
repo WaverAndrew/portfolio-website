@@ -30,6 +30,14 @@ export const WorkExperience: React.FC = () => {
       location: "Luxembourg, Luxembourg",
     },
     {
+      company: "Susquehanna International Group",
+      logo: "/images/susquehanna_international_group_llp_sig_logo.jpeg",
+      role: "Quantitative Trading - Spring Days",
+      type: "Quantitative Trading - Spring Days",
+      period: "Apr 2025",
+      location: "Dublin, Ireland",
+    },
+    {
       company: "UBooks",
       logo: "https://media.licdn.com/dms/image/v2/D4D0BAQE5QJ9kzLEvmQ/company-logo_400_400/company-logo_400_400/0/1737487185134?e=1749686400&v=beta&t=RS68EJvbg3y3IIsvgBUrZV6aAZ85aoVGBd1eYw_grVs",
       role: "Founder",

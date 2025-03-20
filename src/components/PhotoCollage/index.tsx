@@ -32,7 +32,7 @@ export const PhotoCollage: React.FC = () => {
         </div>
         <div className="col-span-3 row-span-2 relative rounded-lg overflow-hidden shadow-sm">
           <Image
-            src="https://pub-4515151b6c424acfad425474e1717a02.r2.dev/image.webp"
+            src="https://pub-4515151b6c424acfad425474e1717a02.r2.dev/IMG_0129.webp"
             alt="Photo 7"
             fill
             className="object-cover"
@@ -43,7 +43,7 @@ export const PhotoCollage: React.FC = () => {
             src="https://pub-4515151b6c424acfad425474e1717a02.r2.dev/IMG_5826-2.webp"
             alt="Photo 8"
             fill
-            className="object-cover"
+            className="object-cover object-[center_30%]"
           />
         </div>
       </div>

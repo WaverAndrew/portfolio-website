@@ -32,6 +32,7 @@ export const Education: React.FC = () => {
     },
     {
       school: "I.I.S Don Milani Montichiari",
+      logo: "/images/repubblica.png",
       degree: "Scientific Path",
       period: "2018 - 2023",
       location: "Montichiari, Italy",

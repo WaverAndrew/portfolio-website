@@ -4,7 +4,7 @@ export const SocialLinks: React.FC = () => {
   return (
     <div className="flex gap-3 items-center">
       <a
-        href="https://github.com/yourusername"
+        href="https://github.com/WaverAndrew"
         target="_blank"
         rel="noopener noreferrer"
         className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-colors"
