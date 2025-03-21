@@ -23,7 +23,7 @@ export const WorkExperience: React.FC = () => {
   const jobs: Job[] = [
     {
       company: "Amazon",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/4/4a/Amazon_icon.svg",
+      logo: "/images/amazon.png",
       role: "Incoming - Project Manager Intern",
       type: "Incoming - Project Manager Intern",
       period: "Jun 2025 - Sept 2025",
