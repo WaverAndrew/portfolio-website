@@ -11,13 +11,6 @@ interface Award {
 export const Awards: React.FC = () => {
   const awards: Award[] = [
     {
-      icon: "🏆",
-      title: "Multiple Competition Wins",
-      event: "International Competitions",
-      tagline:
-        "Won Banca Intesa's startup contest (Italy's largest bank), secured back-to-back victories at UPenn's blockchain & AI hackathons",
-    },
-    {
       icon: "🎯",
       title: "8th Place",
       event: "National Math Olympiad 2020",
@@ -30,6 +23,13 @@ export const Awards: React.FC = () => {
       event: "Idemos",
       tagline:
         "Achieved over 30.000$/month in revenue from 20+ international clients at 17 y/o",
+    },
+    {
+      icon: "🏆",
+      title: "Multiple Competition Wins",
+      event: "International Competitions",
+      tagline:
+        "Won Banca Intesa's startup contest (Italy's largest bank), secured back-to-back victories at UPenn's blockchain & AI hackathons",
     },
     {
       icon: "🏅",
