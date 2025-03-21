@@ -12,34 +12,48 @@ import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <div className="space-y-10">
+    <article className="space-y-10">
       {/* Hero Section */}
-      <Hero />
+      <section aria-label="Introduction">
+        <Hero />
+      </section>
 
       {/* Photo Collage Grid */}
-      <PhotoCollage />
+      <section aria-label="Photo Gallery">
+        <PhotoCollage />
+      </section>
 
       {/* Work Experience */}
-      <WorkExperience />
+      <section aria-label="Work Experience">
+        <WorkExperience />
+      </section>
 
       {/* Education */}
-      <Education />
+      <section aria-label="Education">
+        <Education />
+      </section>
 
       {/* Awards */}
-      <Awards />
+      <section aria-label="Awards and Recognition">
+        <Awards />
+      </section>
 
       {/* Projects */}
-      <Projects />
+      <section aria-label="Projects">
+        <Projects />
+      </section>
 
       {/* Quote */}
-      <Quote
-        text="The best way to predict the future is to invent it."
-        author="Alan Kay"
-        role="Computer Scientist"
-      />
+      <section aria-label="Inspirational Quote">
+        <Quote
+          text="The best way to predict the future is to invent it."
+          author="Alan Kay"
+          role="Computer Scientist"
+        />
+      </section>
 
       {/* Footer */}
       <Footer />
-    </div>
+    </article>
   );
 }
