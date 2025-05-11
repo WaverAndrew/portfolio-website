@@ -54,8 +54,8 @@ export const Projects: React.FC = () => {
       description:
         "An automatic tool designed to easily find instagram pages and influencers meeting certain criteria for influencer marketing campaigns, without manual interaction.",
       image: "/images/instascanner_screen.png",
-      link: "https://github.com/WaverAndrew/instascanner",
-      demoLink: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      link: "",
+      demoLink: "",
       liveLink: null,
       tech: ["Python", "Web Scraping", "Instagram API"],
       period: "2017-2018",
@@ -81,9 +81,9 @@ export const Projects: React.FC = () => {
         "A platform that allowed web 3.0 projects working with NFTs to offer their customers an easy way to customise their own unique masterpieces, creating a private and personalised experience.",
       image:
         "https://media.licdn.com/dms/image/v2/D4E0BAQHl1hu-bNuqpg/company-logo_400_400/company-logo_400_400/0/1692711668598?e=1749686400&v=beta&t=mm5ZnDZPPltUGcvk7Q3i9qVlnsuM6-8tyvVKFoNkDOU",
-      link: "https://github.com/WaverAndrew/idemos",
-      demoLink: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-      liveLink: "https://idemos.io",
+      link: "",
+      demoLink: "",
+      liveLink: "",
       tech: ["Web3", "NFT", "Blockchain"],
       period: "2021-2022",
       results: [
@@ -126,9 +126,9 @@ export const Projects: React.FC = () => {
       title: "Eaglecam",
       description:
         "A tool that extracted the photos that look the best from short videos using a custom AI Neural Network trained to recognise good looking photos.",
-      image: "/project2.jpg",
-      link: "https://github.com/WaverAndrew/eaglecam",
-      demoLink: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      image: "/images/eaglecam.png",
+      link: "",
+      demoLink: "",
       liveLink: null,
       tech: ["Python", "TensorFlow", "AI/ML"],
       period: "2019",
