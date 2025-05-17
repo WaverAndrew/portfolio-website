@@ -9,7 +9,7 @@ interface QuoteProps {
 export const Quote: React.FC<QuoteProps> = ({ text, author, role }) => {
   return (
     <section className="space-y-6">
-      <div className="relative p-8 bg-gray-50/50 dark:bg-gray-900/50 rounded-lg max-w-3xl mx-auto">
+      <div className="relative p-8 rounded-lg max-w-3xl mx-auto">
         <svg
           className="absolute text-gray-300 dark:text-gray-700 h-16 w-16 -top-4 -left-4 transform -rotate-12"
           fill="currentColor"
