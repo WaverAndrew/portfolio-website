@@ -23,6 +23,30 @@ export const Projects: React.FC = () => {
 
   const projects: Project[] = [
     {
+      title: "EVE",
+      description:
+        "Creating a multi-agent AI brain for autonomous drones. EVE can process real-time visual and satellite data, enabling human-like reasoning and decision-making. It allows drones to execute complex, abstract missions independently.",
+      image: "/images/eve.png",
+      link: "",
+      demoLink: "",
+      liveLink: "",
+      tech: ["Python", "MLLMs", "3D Simulator"],
+      period: "2025 - Present",
+      results: [
+        "Successuly created a fully autonomous alpha version",
+        "Created a complete 3D simulation by reverse engineering google earth pro",
+      ],
+      problems: [
+        "Coordinating multiple LLM-agents in an iterative process",
+        "Latency in brain reaction",
+      ],
+      learnings: [
+        "Exploring the limits of MLLM agents, and how to overcome them",
+        "How to create a complete 3D simulation environment",
+        "How to give spatial reasoning to an LLM",
+      ],
+    },
+    {
       title: "UBooks",
       description:
         "Founded the first peer-to-peer marketplace for university textbooks in Italy. Currently at 2.8k+ users, 30k visits and 1.5k books traded in the first two weeks.",
