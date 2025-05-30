@@ -17,7 +17,7 @@ const researchData: ResearchPaper[] = [
     year: 2025, // Assuming current or upcoming year
     supervisors: ["Prof. Zecchina", "Prof. Saglietti", "Prof. Biggio"], // Changed from authors
     abstract:
-      "Working with an amazing team as part of an AI research team in Bocconi; focusing on exploring world models architectures and capabilities", // Updated abstract
+      "Working with an amazing team as part of AI Lab in Bocconi; focusing on exploring world models architectures and capabilities", // Updated abstract
     link: "#", // Placeholder link, update when available
   },
 ];
