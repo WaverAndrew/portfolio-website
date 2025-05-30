@@ -30,6 +30,17 @@ export const WorkExperience: React.FC = () => {
       location: "Luxembourg, Luxembourg",
     },
     {
+      company: "Università Bocconi",
+      logo: "/images/bocconi.png",
+      role: "Undergraduate Student Researcher",
+      type: "Undergraduate Student Researcher",
+      period: "mar 2025 - Presente · 3 mesi",
+      location: "Milan, Italy",
+      description:
+        "Department of Computing Sciences, AI Lab. Research project under supervision of prof. Zecchina, Saglietti and Biggio",
+    },
+
+    {
       company: "Susquehanna International Group",
       logo: "/images/susquehanna_international_group_llp_sig_logo.jpeg",
       role: "Quantitative Trading - Spring Days",
@@ -48,15 +59,6 @@ export const WorkExperience: React.FC = () => {
         "Founded the first peer-to-peer marketplace for university textbooks in Italy. Currently at **2.8k+ users**, **30k visits** and **1.5k books traded** in the first two weeks.",
     },
     {
-      company: "Leger Labs",
-      logo: "https://media.licdn.com/dms/image/v2/D560BAQHZpywtsLraYw/company-logo_200_200/company-logo_200_200/0/1719257305365?e=1749686400&v=beta&t=SEQq3JX8r6vrJ3TjULcdZPMJ1YF-S5_42ZVYl9_q0P4",
-      type: "Software Engineer - Applied AI",
-      period: "March 2025 - Present",
-      location: "Remote",
-      description:
-        "Leger Labs is a NYC based **VC-backed startup** creating agentic AI solutions for the insurance industry. I'm developing an **AI-powered sales calls analysis tool** to optimize the sales process and collect data from the prospect automatically.",
-    },
-    {
       company: "University of Pennsylvania",
       logo: "https://media.licdn.com/dms/image/v2/C4E0BAQHnbnsnJlBiZg/company-logo_400_400/company-logo_400_400/0/1630601168515/university_of_pennsylvania_logo?e=1749686400&v=beta&t=LrjjKAxPCm-dxtz-PQ2LrVncSZ8tNsg1n7c6sSob_4M",
       role: "Blockchain Hackathon | Multiple Award Winner",
@@ -64,20 +66,34 @@ export const WorkExperience: React.FC = () => {
       period: "Feb 2024 - Feb 2025",
       location: "Philadelphia, PA, US",
       description:
-        "<h3 class='font-bold text-sm md:text-base mt-2 mb-1'>2025 Hackathon</h3>" +
-        "<ul class='list-disc pl-4 mb-3 text-xs md:text-sm'>" +
+        "<div class='relative before:absolute before:top-1.5 before:bottom-0 before:left-[0.1875rem] before:w-0.5 before:-translate-x-1/2 before:bg-slate-300 dark:before:bg-slate-700'>" +
+        // 2025 Hackathon
+        "<div class='relative mb-6'>" +
+        "<div class='absolute left-0 top-1.5 w-3 h-3 bg-green-500 rounded-full -translate-x-[calc(50%-0.0625rem)]'></div>" +
+        "<div class='pl-6'>" +
+        "<h3 class='font-bold text-sm md:text-base mb-1 text-slate-700 dark:text-slate-200'>2025 Hackathon</h3>" +
+        "<ul class='list-disc pl-4 space-y-1 text-xs md:text-sm text-slate-600 dark:text-slate-400'>" +
         "<li>Invited and sponsored for the <strong>second consecutive year</strong></li>" +
         "<li>Coded <strong>22 hours straight</strong> with minimal breaks</li>" +
         "<li>Developed <strong>4 working projects</strong> with my team</li>" +
         "<li><strong>Won our track</strong> and placed <strong>2nd in another category</strong></li>" +
         "<li>Created a <strong>natural language interface</strong> for complex blockchain operations</li>" +
         "</ul>" +
-        "<h3 class='font-bold text-sm md:text-base mt-3 mb-1'>2024 Hackathon</h3>" +
-        "<ul class='list-disc pl-4 text-xs md:text-sm'>" +
+        "</div>" +
+        "</div>" +
+        // 2024 Hackathon
+        "<div class='relative'>" +
+        "<div class='absolute left-0 top-1.5 w-3 h-3 bg-green-500 rounded-full -translate-x-[calc(50%-0.0625rem)]'></div>" +
+        "<div class='pl-6'>" +
+        "<h3 class='font-bold text-sm md:text-base mb-1 text-slate-700 dark:text-slate-200'>2024 Hackathon</h3>" +
+        "<ul class='list-disc pl-4 space-y-1 text-xs md:text-sm text-slate-600 dark:text-slate-400'>" +
         "<li>Invited and sponsored to travel to UPenn as a <strong>freshman</strong></li>" +
         "<li>Developed an <strong>NFT-based platform</strong> for simplifying scholarship eligibility certification</li>" +
         "<li><strong>Won the award</strong> for our track</li>" +
-        "</ul>",
+        "</ul>" +
+        "</div>" +
+        "</div>" +
+        "</div>",
     },
     {
       company: "Lead The Future Mentorship",

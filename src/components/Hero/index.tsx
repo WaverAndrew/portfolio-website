@@ -43,8 +43,9 @@ export const Hero: React.FC = () => {
 
         <p className="text-base text-gray-600 dark:text-gray-400 leading-relaxed">
           Outside of tech, you'll find me playing{" "}
-          <span className="font-medium">tennis</span>, chasing fresh powder on
-          my <span className="font-medium">snowboard</span>, or diving into a
+          <span className="font-medium">tennis</span>, chasing powder on my{" "}
+          <span className="font-medium">snowboard</span>,{" "}
+          <span className="font-medium">kitesurfing</span>, or diving into a
           good <span className="font-medium">book</span>.
         </p>
       </div>

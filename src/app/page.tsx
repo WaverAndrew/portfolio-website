@@ -7,6 +7,7 @@ import WorkExperience from "@/components/WorkExperience";
 import Education from "@/components/Education";
 import Awards from "@/components/Awards";
 import Projects from "@/components/Projects";
+import Research from "@/components/Research";
 import Quote from "@/components/Quote";
 import Footer from "@/components/Footer";
 
@@ -28,6 +29,11 @@ export default function Home() {
         <WorkExperience />
       </section>
 
+      {/* Research */}
+      <section aria-label="Research">
+        <Research />
+      </section>
+
       {/* Education */}
       <section aria-label="Education">
         <Education />
@@ -46,9 +52,9 @@ export default function Home() {
       {/* Quote */}
       <section aria-label="Inspirational Quote">
         <Quote
-          text="The best way to predict the future is to invent it."
-          author="Alan Kay"
-          role="Computer Scientist"
+          text="The people who are crazy enough to think they can change the world are the ones who do."
+          author="Steve Jobs"
+          role=""
         />
       </section>
 

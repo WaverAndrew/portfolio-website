@@ -175,7 +175,15 @@ export const Projects: React.FC = () => {
 
   return (
     <section className="space-y-6">
-      <h2 className="text-2xl font-bold">Projects</h2>
+      <div className="mb-12 text-center">
+        <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+          Projects
+        </h2>
+        <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+          A collection of projects I've built to learn and explore new
+          technologies.
+        </p>
+      </div>
       <div className="grid gap-6 sm:grid-cols-2">
         {projects.map((project, i) => (
           <button
