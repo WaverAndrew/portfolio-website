@@ -39,7 +39,7 @@ export const WorkExperience: React.FC = () => {
       period: "Jun 2025 - Jun 2025",
       location: "San Francisco, CA, US",
       description:
-        "Invited to attend the highly selective AI Startup School, a private conference where the world best students get to listen and learn to the top AI leaders and founders such as Sam Altman, Andrew Ng, Elon Musk, and many more.",
+        "Invited to attend the highly selective AI Startup School, a conference where the world best students get to listen and learn from top AI leaders and founders such as Sam Altman, Andrew Ng, Elon Musk, and many more.",
     },
     {
       company: "Università Bocconi",
