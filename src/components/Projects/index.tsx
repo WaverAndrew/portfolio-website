@@ -23,7 +23,7 @@ export const Projects: React.FC = () => {
 
   const projects: Project[] = [
     {
-      title: "EVE | Multi-agent Brain for Autonomous Drones",
+      title: "EVE | Multi-Agent Brain for Autonomous Drones",
       description:
         "Creating a multi-agent AI brain for autonomous drones. EVE can process real-time visual and satellite data, enabling human-like reasoning and decision-making. It allows drones to execute complex, abstract missions independently.",
       image: "/images/eve.png",

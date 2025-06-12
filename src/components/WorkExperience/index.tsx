@@ -24,10 +24,22 @@ export const WorkExperience: React.FC = () => {
     {
       company: "Amazon",
       logo: "/images/amazon.png",
-      role: "Incoming - Project Manager Intern",
-      type: "Incoming - Project Manager Intern",
+      role: "Project Manager Intern",
+      type: "Project Manager Intern",
       period: "Jun 2025 - Sept 2025",
       location: "Luxembourg, Luxembourg",
+      description:
+        "I'm working on the Supply Chain Optimization Technology (SCOT) team.",
+    },
+    {
+      company: "Y Combinator",
+      logo: "/images/yc.png",
+      role: "AI Startup School",
+      type: "AI Startup School",
+      period: "Jun 2025 - Jun 2025",
+      location: "San Francisco, CA, US",
+      description:
+        "Invited to attend the highly selective AI Startup School, a private conference where the world best students get to listen and learn to the top AI leaders and founders such as Sam Altman, Andrew Ng, Elon Musk, and many more.",
     },
     {
       company: "Università Bocconi",
@@ -61,8 +73,8 @@ export const WorkExperience: React.FC = () => {
     {
       company: "University of Pennsylvania",
       logo: "https://media.licdn.com/dms/image/v2/C4E0BAQHnbnsnJlBiZg/company-logo_400_400/company-logo_400_400/0/1630601168515/university_of_pennsylvania_logo?e=1749686400&v=beta&t=LrjjKAxPCm-dxtz-PQ2LrVncSZ8tNsg1n7c6sSob_4M",
-      role: "Blockchain Hackathon | Multiple Award Winner",
-      type: "Blockchain Hackathon | Multiple Award Winner",
+      role: "AI in inBlockchain Hackathon | Multiple Award Winner",
+      type: "AI in Blockchain Hackathon | Multiple Award Winner",
       period: "Feb 2024 - Feb 2025",
       location: "Philadelphia, PA, US",
       description:
