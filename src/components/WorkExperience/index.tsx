@@ -62,7 +62,7 @@ export const WorkExperience: React.FC = () => {
     },
     {
       company: "UBooks",
-      logo: "/images/ubooks.png",
+      logo: "/images/ubooks.jpeg",
       role: "Founder",
       type: "Founder",
       period: "Oct 2024 - Present",
