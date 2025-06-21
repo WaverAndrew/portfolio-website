@@ -103,8 +103,7 @@ export const Projects: React.FC = () => {
       title: "Idemos",
       description:
         "A platform that allowed web 3.0 projects working with NFTs to offer their customers an easy way to customise their own unique masterpieces, creating a private and personalised experience.",
-      image:
-        "https://media.licdn.com/dms/image/v2/D4E0BAQHl1hu-bNuqpg/company-logo_400_400/company-logo_400_400/0/1692711668598?e=1749686400&v=beta&t=mm5ZnDZPPltUGcvk7Q3i9qVlnsuM6-8tyvVKFoNkDOU",
+      image: "/images/idemos.jpeg",
       link: "",
       demoLink: "",
       liveLink: "",

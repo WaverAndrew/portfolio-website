@@ -62,7 +62,7 @@ export const WorkExperience: React.FC = () => {
     },
     {
       company: "UBooks",
-      logo: "https://media.licdn.com/dms/image/v2/D4D0BAQE5QJ9kzLEvmQ/company-logo_400_400/company-logo_400_400/0/1737487185134?e=1749686400&v=beta&t=RS68EJvbg3y3IIsvgBUrZV6aAZ85aoVGBd1eYw_grVs",
+      logo: "/images/ubooks.png",
       role: "Founder",
       type: "Founder",
       period: "Oct 2024 - Present",
@@ -72,7 +72,7 @@ export const WorkExperience: React.FC = () => {
     },
     {
       company: "University of Pennsylvania",
-      logo: "https://media.licdn.com/dms/image/v2/C4E0BAQHnbnsnJlBiZg/company-logo_400_400/company-logo_400_400/0/1630601168515/university_of_pennsylvania_logo?e=1749686400&v=beta&t=LrjjKAxPCm-dxtz-PQ2LrVncSZ8tNsg1n7c6sSob_4M",
+      logo: "/images/upenn.jpeg",
       role: "AI in inBlockchain Hackathon | Multiple Award Winner",
       type: "AI in Blockchain Hackathon | Multiple Award Winner",
       period: "Feb 2024 - Feb 2025",
@@ -109,7 +109,7 @@ export const WorkExperience: React.FC = () => {
     },
     {
       company: "Lead The Future Mentorship",
-      logo: "https://media.licdn.com/dms/image/v2/C4D0BAQH-xHKaD_VO5g/company-logo_400_400/company-logo_400_400/0/1673133565781?e=1749686400&v=beta&t=mO3ReB42rDcrtet7y9JU9T5aW1wUC67gT_KXwB38NTQ",
+      logo: "/images/ltf.jpeg",
       role: "Mentee",
       type: "Mentee",
       period: "Sept 2024 - Present",
@@ -119,7 +119,7 @@ export const WorkExperience: React.FC = () => {
     },
     {
       company: "Idemos",
-      logo: "https://media.licdn.com/dms/image/v2/D4E0BAQHl1hu-bNuqpg/company-logo_400_400/company-logo_400_400/0/1692711668598?e=1749686400&v=beta&t=mm5ZnDZPPltUGcvk7Q3i9qVlnsuM6-8tyvVKFoNkDOU",
+      logo: "/images/idemos.jpeg",
       role: "Co-Founder & Developer",
       type: "Co-Founder & Developer",
       period: "Sept 2021 - June 2022",
