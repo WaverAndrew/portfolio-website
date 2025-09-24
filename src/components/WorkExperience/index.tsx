@@ -24,12 +24,12 @@ export const WorkExperience: React.FC = () => {
     {
       company: "Amazon",
       logo: "/images/amazon.png",
-      role: "Project Manager Intern",
-      type: "Project Manager Intern",
+      role: "Tech Product Manager Intern, ML/GenAI",
+      type: "Tech Product Manager Intern, ML/GenAI — SCOT",
       period: "Jun 2025 - Sept 2025",
       location: "Luxembourg, Luxembourg",
       description:
-        "I'm working on the Supply Chain Optimization Technology (SCOT) team.",
+        "Working on the **Supply Chain Optimization Technology (SCOT) team** where I got to build some really cool stuff:\n\n• Created an ML pipeline that forecasts supply chain metrics through complex network simulations\n• Built a GenAI-powered dashboard that lets non-technical people easily evaluate scenarios and make decisions\n Also got an **Honorable Mention (Top 4 project worldwide in AIM division)** in Amazon's GenAI hackathon!",
     },
     {
       company: "Y Combinator",
