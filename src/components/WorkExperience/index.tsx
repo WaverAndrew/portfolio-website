@@ -23,7 +23,7 @@ export const WorkExperience: React.FC = () => {
   const jobs: Job[] = [
     {
       company: "Amazon",
-      logo: "/images/amazon.png",
+      logo: "/images/amazon.jpeg",
       role: "Tech Product Manager Intern, ML/GenAI",
       type: "Tech Product Manager Intern, ML/GenAI — SCOT",
       period: "Jun 2025 - Sept 2025",
@@ -70,43 +70,7 @@ export const WorkExperience: React.FC = () => {
       description:
         "Founded the first peer-to-peer marketplace for university textbooks in Italy. Currently at **2.8k+ users**, **30k visits** and **1.5k books traded** in the first two weeks.",
     },
-    {
-      company: "University of Pennsylvania",
-      logo: "/images/upenn.jpeg",
-      role: "AI in inBlockchain Hackathon | Multiple Award Winner",
-      type: "AI in Blockchain Hackathon | Multiple Award Winner",
-      period: "Feb 2024 - Feb 2025",
-      location: "Philadelphia, PA, US",
-      description:
-        "<div class='relative before:absolute before:top-1.5 before:bottom-0 before:left-[0.1875rem] before:w-0.5 before:-translate-x-1/2 before:bg-slate-300 dark:before:bg-slate-700'>" +
-        // 2025 Hackathon
-        "<div class='relative mb-6'>" +
-        "<div class='absolute left-0 top-1.5 w-3 h-3 bg-green-500 rounded-full -translate-x-[calc(50%-0.0625rem)]'></div>" +
-        "<div class='pl-6'>" +
-        "<h3 class='font-bold text-sm md:text-base mb-1 text-slate-700 dark:text-slate-200'>2025 Hackathon</h3>" +
-        "<ul class='list-disc pl-4 space-y-1 text-xs md:text-sm text-slate-600 dark:text-slate-400'>" +
-        "<li>Invited and sponsored for the <strong>second consecutive year</strong></li>" +
-        "<li>Coded <strong>22 hours straight</strong> with minimal breaks</li>" +
-        "<li>Developed <strong>4 working projects</strong> with my team</li>" +
-        "<li><strong>Won our track</strong> and placed <strong>2nd in another category</strong></li>" +
-        "<li>Created a <strong>natural language interface</strong> for complex blockchain operations</li>" +
-        "</ul>" +
-        "</div>" +
-        "</div>" +
-        // 2024 Hackathon
-        "<div class='relative'>" +
-        "<div class='absolute left-0 top-1.5 w-3 h-3 bg-green-500 rounded-full -translate-x-[calc(50%-0.0625rem)]'></div>" +
-        "<div class='pl-6'>" +
-        "<h3 class='font-bold text-sm md:text-base mb-1 text-slate-700 dark:text-slate-200'>2024 Hackathon</h3>" +
-        "<ul class='list-disc pl-4 space-y-1 text-xs md:text-sm text-slate-600 dark:text-slate-400'>" +
-        "<li>Invited and sponsored to travel to UPenn as a <strong>freshman</strong></li>" +
-        "<li>Developed an <strong>NFT-based platform</strong> for simplifying scholarship eligibility certification</li>" +
-        "<li><strong>Won the award</strong> for our track</li>" +
-        "</ul>" +
-        "</div>" +
-        "</div>" +
-        "</div>",
-    },
+
     {
       company: "Lead The Future Mentorship",
       logo: "/images/ltf.jpeg",

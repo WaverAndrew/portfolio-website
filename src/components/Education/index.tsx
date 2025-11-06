@@ -18,7 +18,7 @@ export const Education: React.FC = () => {
     {
       school: "Bocconi University",
       logo: "/images/bocconi.png",
-      degree: "Bachelor's in Economics and Management",
+      degree: "BSc in Economics, Business",
       period: "2023 - Present",
       location: "Milan, Italy",
       description: "Current GPA: 30/30 (as of 03/25)",

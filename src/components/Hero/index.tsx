@@ -23,8 +23,8 @@ export const Hero: React.FC = () => {
 
       <div className="space-y-4 max-w-2xl">
         <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed border-l-4 border-purple-500 pl-4 py-1">
-          I'm a <span className="font-medium">20-year-old student</span> based
-          in Milan, Italy,{" "}
+          I'm a <span className="font-medium">21 y/o student</span> based in
+          Milan, Italy,{" "}
           <span className="font-bold">deeply in love with startups, tech</span>,
           and the excitement of turning ideas into reality.
         </p>

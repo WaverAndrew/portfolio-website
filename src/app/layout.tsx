@@ -7,11 +7,11 @@ import Script from "next/script";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Andrea Bonarrigo - Startup Enthusiast & Software Engineer",
+  title: "Andrea Bonarrigo - Product & Software Engineer",
   description:
-    "Hi! I am a 20 years old student living in Milan, Italy with a burning passion for startups and technology, currently pursuing a BSc in International Economics & Management at Bocconi University. I started coding at 11 and quickly became passionate about bringing my ideas to life. With each project, I realized my love for startups and that's what I aspire to pursue. Outside of work, I enjoy tennis, snowboarding, and reading.",
+    "Hi! I am a 21 years old student living in Milan, Italy with a burning passion for startups and technology, currently pursuing a BSc in International Economics & Management at Bocconi University. I started coding at 11 and quickly became passionate about bringing my ideas to life. With each project, I realized my love for startups and that's what I aspire to pursue. Outside of work, I enjoy tennis, snowboarding, and reading.",
   keywords:
-    "Software Engineer, Entrepreneur, Bocconi University, Milan, Technology, Startups, Web Development",
+    "Product Engineer, Software Engineer, Entrepreneur, Bocconi University, Milan, Technology, Startups, Web Development",
   authors: [{ name: "Andrea Bonarrigo" }],
   creator: "Andrea Bonarrigo",
   publisher: "Andrea Bonarrigo",
@@ -24,14 +24,14 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://andreabonarrigo.com",
-    title: "Andrea Bonarrigo - Startup Enthusiast & Software Engineer",
+    title: "Andrea Bonarrigo - Product & Software Engineer",
     description:
       "Passionate software engineer and entrepreneur based in Milan, Italy. Currently pursuing a BSc in Economics & Management at Bocconi University.",
     siteName: "Andrea Bonarrigo Portfolio",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Andrea Bonarrigo - Startup Enthusiast & Software Engineer",
+    title: "Andrea Bonarrigo - Product & Software Engineer",
     description:
       "Passionate software engineer and entrepreneur based in Milan, Italy. Currently pursuing a BSc in Economics & Management at Bocconi University.",
   },

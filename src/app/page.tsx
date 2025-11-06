@@ -6,6 +6,7 @@ import PhotoCollage from "@/components/PhotoCollage";
 import WorkExperience from "@/components/WorkExperience";
 import Education from "@/components/Education";
 import Awards from "@/components/Awards";
+import Hackathons from "@/components/Hackathons";
 import Projects from "@/components/Projects";
 import Research from "@/components/Research";
 import Quote from "@/components/Quote";
@@ -32,6 +33,11 @@ export default function Home() {
       {/* Research */}
       <section aria-label="Research">
         <Research />
+      </section>
+
+      {/* Hackathons */}
+      <section aria-label="Hackathons">
+        <Hackathons />
       </section>
 
       {/* Education */}
